@@ -1,0 +1,25 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.sec{
+
+    position: relative;
+    display: inline-block;
+    height: auto;
+    background-color: aqua;
+}
+
+
+.search_btn{
+
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}

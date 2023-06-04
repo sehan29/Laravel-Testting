@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Topic</title>
+    <link rel="stylesheet" href="data_insert.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="dashbord">
+
+
+            <div class="header_section">
+
+                <div class="blog_header">
+                    <div class="blog_navigation">
+                        <div class="name_of_blog">
+                            <h1>SHEHAN
+                                <span class="blog_sub">BLOG</span>
+                            </h1>
+                        </div>
+                        <div class="iterms">
+                            <ul class="sub-iterms">
+                               <a href="#"><li class="d">News</li></a>
+                               <a href="#"><li class="d">Popular</li></a>
+                               <a href="#"><li class="d">Web Design</li></a>
+                               <a href="#"><li class="d">JavaScript</li></a>
+                               <a href="#"><li class="d">JQuery</li></a>
+                               <a href="#"><li class="d">CSS</li></a>
+                            </ul>
+                        </div>
+    
+                        <div class="drop_down">
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="row"></div>
+                        </div>
+    
+                        <div class="search_bar">
+                            <div class="icon_of_search">
+    
+                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.842 21.134l-6.843-6.843a7.317 7.317 0 1 0-.708.708l6.843 6.843a.5.5 0 1 0 .708-.708zM9.5 15.8a6.3 6.3 0 1 1 6.3-6.3 6.307 6.307 0 0 1-6.3 6.3z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+
+
+                <div class="kkkk">
+
+                    <div class="slid_navigation">
+
+                    
+
+                        <div class="top_details">
+                            <div class="blog_name">
+                                <h2>SHEHAN 
+                                    <span class="secound_part">BLOG.</span></h2>
+                            </div>
+                            <div class="slidder">
+                                <span title="Slide" class="Slide">←</span>
+                            </div>
+
+                        </div>              
+
+                        <div class="other_iterms">
+                            <ul>
+                                <li class="dash_itms">Dashbord</li>
+                                <li class="dash_itms">Create New Article</li>
+                                <li class="dash_itms">View Articles</li>
+                                <li class="dash_itms">Help</li>
+                                <li class="dash_itms">Update Article</li>
+                                <li class="dash_itms">Delete Article</li>
+                            </ul>
+                        </div>
+
+                        <div class="profile_pic">
+
+                            <div class="img_sec">
+                                <figure>
+                                    <!-- Insert image What You want -->
+                                <img src="scott-graham-5fNmWej4tAA-unsplash.jpg" alt="" width="100px" height="100px" class="imim">
+                                </figure>
+                            </div>
+                            <div class="logout_btn">
+                                <div class="button_1">
+                                    <span title="Slide" class="Slide">←</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="body_of_dash">
+
+                        <div class="insert_section">
+                            <div class="header_name">
+                                <h1>Add a New Topic</h1>
+                            </div>
+
+                            <form action="" method="get">
+
+                                <div class="topic_title">
+                                    <div class="topic_name">
+                                        <span>Topic Name : </span>
+                                    </div>
+                                    <input type="text" placeholder="Enter The Topic Title" title="Topic Title" required>
+                                </div>
+
+                                <div class="topic_title">
+                                    <div class="topic_name">
+                                        <span>Programming Language : </span>
+                                    </div>
+                                    <input type="text" placeholder="Enter Programming Language" title="Language" required>
+                                </div>
+
+                                <hr>
+
+                                <div class="pharaphaphs">
+
+                                    <div class="main_ph_title">
+                                        <div class="main_ttle">
+                                            <span>Pharaghraph Title : </span>
+                                        </div>
+                                        <input type="text" placeholder="Main Title Of The ">
+                                    </div>
+
+                                    <div class="pha_body">
+
+                                        <div class="body_of_ph">
+                                            <h2>Pharaghraph Body</h2>
+                                        </div>
+
+                                        <div class="new_add_btn">
+                                            <div class="btn"><span>+</span></div>
+                                        </div>
+                                    </div>
+
+
+                                    <ul class="unorder_list_phr">
+
+                                        <div class="secc">
+                                            <div class="text_area_feild"></div>
+                                            <div class="cls"></div>
+                                        </div>
+
+                                    </ul>
+
+
+
+
+                                </div>
+
+
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+    <script>
+
+
+        let btn = document.querySelector('.new_add_btn');
+
+
+
+        btn.addEventListener('click',()=>{
+
+
+            let adding_feild = document.querySelector('.text_area_feild');
+            let div_tag = document.createElement('div');
+            let brk = document.createElement('br');
+            let txt_ar = document.createElement('textarea');
+            txt_ar.cols = 40;
+            txt_ar.rows = 6;
+            txt_ar.name = "text+area_feild";
+
+
+            adding_feild.append(div_tag);
+            div_tag.append(txt_ar);
+            div_tag.classList.add('text_my_class');
+
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>
