@@ -122,8 +122,6 @@
                                     <input type="text" placeholder="Enter Programming Language" title="Language" required>
                                 </div>
 
-                                <hr>
-
                                 <div class="pharaphaphs">
 
                                     <div class="main_ph_title">
@@ -133,6 +131,7 @@
                                         <input type="text" placeholder="Main Title Of The ">
                                     </div>
 
+                                    <hr class="ss">
                                     <div class="pha_body">
 
                                         <div class="body_of_ph">
@@ -140,7 +139,7 @@
                                         </div>
 
                                         <div class="new_add_btn">
-                                            <div class="btn"><span>+</span></div>
+                                            <div class="btn" title="Add Title"><span>+</span></div>
                                         </div>
                                     </div>
 
@@ -148,8 +147,14 @@
                                     <ul class="unorder_list_phr">
 
                                         <div class="secc">
-                                            <div class="text_area_feild"></div>
-                                            <div class="cls"></div>
+
+                                            <div class="text_area_feild">
+
+                                                <div class="text_my_class">
+                                                    <textarea name="text_area_feild" id="" cols="40" rows="6" placeholder="Enter The Pharaphaph"></textarea>
+                                                </div>
+                                            </div>
+
                                         </div>
 
                                     </ul>
@@ -160,6 +165,12 @@
                                 </div>
 
 
+                                <div class="submit_btn">
+
+                                    <div class="my_button">
+                                        <input type="submit" value="SUBMIT" class="my_submit_btn">
+                                    </div>
+                                </div>
 
                             </form>
 
@@ -190,9 +201,8 @@
             let txt_ar = document.createElement('textarea');
             txt_ar.cols = 40;
             txt_ar.rows = 6;
-            txt_ar.name = "text+area_feild";
-
-
+            txt_ar.name = "text_area_feild";
+            txt_ar.placeholder = "Enter The Sub Pharaphaph ";
             adding_feild.append(div_tag);
             div_tag.append(txt_ar);
             div_tag.classList.add('text_my_class');
